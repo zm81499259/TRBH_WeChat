@@ -9,4 +9,5 @@ obj
 .user
 .vs/config/applicationhost.config
 .vs/config/applicationhost.config
-*.config
+*.applicationhost.config
+TRBH_WeChatFunction/.vs/config/applicationhost.config
