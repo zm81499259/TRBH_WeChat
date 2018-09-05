@@ -9,3 +9,4 @@ obj
 .user
 .vs/config/applicationhost.config
 .vs/config/applicationhost.config
+*.config
