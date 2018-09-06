@@ -11,3 +11,5 @@ obj
 .vs/config/applicationhost.config
 *.applicationhost.config
 TRBH_WeChatFunction/.vs/config/applicationhost.config
+.txt
+/MyLog

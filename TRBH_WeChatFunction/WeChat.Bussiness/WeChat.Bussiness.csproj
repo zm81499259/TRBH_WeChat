@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="RulesEngine, Version=2.1.4551.22682, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\athoma13.RulesEngine.2.1.0\lib\net40\RulesEngine.dll</HintPath>
       <Private>True</Private>
@@ -50,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="General\Log4NetHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ICompanyInformationRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
