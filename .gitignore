@@ -13,3 +13,4 @@ obj
 TRBH_WeChatFunction/.vs/config/applicationhost.config
 .txt
 /MyLog
+/TRBH_WeChatFunction/WeChat.Application/MyLog

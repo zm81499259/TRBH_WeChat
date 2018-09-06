@@ -57,7 +57,9 @@
     <Compile Include="General\Log4NetHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ICompanyInformationRepository.cs" />
+    <Compile Include="Repository\IEngineerRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
+    <Compile Include="RespositoryModel\CommonRequestModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WeChat.Model\WeChat.Model.csproj">
@@ -68,9 +70,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RespositoryModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
