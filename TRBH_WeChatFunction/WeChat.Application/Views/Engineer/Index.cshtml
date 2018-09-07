@@ -2,7 +2,7 @@
 @model List<WX_Engineering>
 @{
     Layout = "~/Views/Shared/_LayoutH5.cshtml";
-    ViewBag.Title = "工程";
+    ViewBag.Title = "工程情况";
 }
 
 <section class="content-header">
@@ -11,9 +11,9 @@
         <small>advanced tables</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Link</a></li>
-        <li><a href="#">Data</a></li>
-        <li class="active">GetData</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> 工程明细</a></li>
+        <li><a href="#">工程明细</a></li>
+        <li class="active">工程明细</li>
     </ol>
 </section>
 <section class="content">
@@ -21,7 +21,7 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Hover Data Table</h3>
+                    <h3 class="box-title">工程明细</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -62,7 +62,7 @@
                                     <td>X</td>
                                 </tr>*@
                         </tbody>
-                        <tfoot>
+                        @*<tfoot>
                             <tr>
                                 <th>Rendering engine</th>
                                 <th>Browser</th>
@@ -70,7 +70,7 @@
                                 <th>Engine version</th>
                                 <th>CSS grade</th>
                             </tr>
-                        </tfoot>
+                        </tfoot>*@
                     </table>
                 </div>
                 <!-- /.box-body -->
