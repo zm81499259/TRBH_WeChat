@@ -1,23 +1,85 @@
 ﻿@using WeChat.Model.DataBaseModel;
 @model List<WX_Engineering>
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_LayoutH5.cshtml";
+    ViewBag.Title = "工程";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div>
-        @foreach (var item in Model)
-        {
-           <div>@item.EngineerName</div>
-        }
-        
+<section class="content-header">
+    <h1>
+        Data Tables
+        <small>advanced tables</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Link</a></li>
+        <li><a href="#">Data</a></li>
+        <li class="active">GetData</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Hover Data Table</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>工程名称</th>
+                                <th>施工单位</th>
+                                <th>施工地点</th>
+                                <th>施工状态</th>
+                                <th>施工日期</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                if (Model != null && Model.Count > 0)
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.EngineerName</td>
+                                            <td>@item.ConstructCompanyName</td>
+                                            <td>@item.ConstructAddress</td>
+                                            <td>@item.ConstructState</td>
+                                            <td>@item.ConstructDate.Value.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                        </tr>
+                                    }
+                                }
+                            }
+                            @*<tr>
+                                    <td>Trident</td>
+                                    <td>
+                                        Internet
+                                        Explorer 4.0
+                                    </td>
+                                    <td>Win 95+</td>
+                                    <td> 4</td>
+                                    <td>X</td>
+                                </tr>*@
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Rendering engine</th>
+                                <th>Browser</th>
+                                <th>Platform(s)</th>
+                                <th>Engine version</th>
+                                <th>CSS grade</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
     </div>
-</body>
-</html>
+    <!-- /.row -->
+</section>
+

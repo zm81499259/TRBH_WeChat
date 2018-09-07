@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/Content/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/bower_components/Ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="~/Content/dist/css/AdminLTE.css" />
+    <link rel="stylesheet" href="~/Content/dist/css/skins/_all-skins.min.css" />
+    <script type="text/javascript" src="~/Content/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- AdminLTE App -->
+    <script type="text/javascript" src="~/Content/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Content/dist/js/adminlte.min.js"></script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <!--top导航-->
+        <header class="main-header">
+            <a href="#" class="logo">
+                <span class="logo-mini"><b>A</b>LT</span>
+                <span class="logo-lg"><b>AdminLTE</b></span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only"></span>
+                </a>
+            </nav>
+        </header>
+        <!--left导航-->
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search..." />
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">menu</li>
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="active"><a href="#"><i class="fa fa-link"></i> <span>混凝土生产情况</span></a></li>
+                    <li><a href="#"><i class="fa fa-link"></i> <span>混凝土运输情况</span></a></li>
+                    <li><a href="#"><i class="fa fa-link"></i> <span>合同情况</span></a></li>
+                    @*<li class="treeview">二级
+                            <a href="#">
+                                <i class="fa fa-link"></i> <span>合同情况</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/Engineer/Index"><i class="fa fa-circle-o"></i>日生产量</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i>月生产量</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i>年生产量</a></li>
+                            </ul>
+                        </li>*@
+                    <li><a href="#"><i class="fa fa-link"></i> <span>材料进货情况</span></a></li>
+                </ul>
+            </section>
+        </aside>
+        <!--content内容-->
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+        <!--bottom底部-->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                天瑞宝华信息技术有限公司
+            </div>
+            <strong>Copyright &copy; 2018 <a href="#">Company</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

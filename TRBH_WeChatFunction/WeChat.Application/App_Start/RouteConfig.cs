@@ -16,7 +16,7 @@ namespace WeChat.Application
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Engineer", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
