@@ -51,7 +51,8 @@ namespace WeChat.Bussiness.Repository
                 }
                 if(model.EndTime==null)
                 {
-                    model.EndTime = model.StartTime.Value.AddMonths(1).AddDays(-1);
+                    startTime = new DateTime(startTime.Year, startTime.Month, 1,23,59,59);
+                    model.EndTime = startTime.AddMonths(1).AddDays(-1);
                 }
                 var result = this.Context.WX_Engineering.Where(x => x.CreateDate >= model.StartTime && x.CreateDate <= model.EndTime).ToList();
                 return result;
